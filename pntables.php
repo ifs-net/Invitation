@@ -1,5 +1,14 @@
 <?php
 /**
+ * @package      Invitation
+ * @version      $Id$
+ * @author       Florian Schießl
+ * @link         http://www.ifs-net.de
+ * @copyright    Copyright (C) 2008
+ * @license      http://www.gnu.org/copyleft/gpl.html GNU General Public License
+ */
+
+/**
  * This function is called internally by the core whenever the module is
  * loaded.  It adds in the information
  */
