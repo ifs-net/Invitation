@@ -11,6 +11,7 @@ define('_INVITATION_MAILSSENT',				'Invitations sent to given email addresses!')
 define('_INVITATION_MAILERROR',				'An error occured while sending the emails');
 define('_INVITATION_YOURNAME',				'Your name');
 define('_INVITATION_ALREADYREGISTERED',		'Invitation for following email address was not sent - your friend seems to be already registered here or has recieved another invitation already');
+define('_INVITATION_PERSONALTEXT',			'Personal invitation text');
 
 // plugin
 define('_INVITATION_INVITEDBY',				'Invited by');

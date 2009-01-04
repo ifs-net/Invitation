@@ -19,7 +19,7 @@ function Invitation_pntables()
     $pntable['invitation_column_def'] = array(
 										'id'		=> 'I AUTOINCREMENT PRIMARY',
 										'uid'		=> "I NOTNULL DEFAULT '0'",
-										'email'		=> "C(70) NOTNULL DEFAULT ''",
+										'email'		=> "C(35) NOTNULL DEFAULT ''",
 										'date'		=> 'T DEFAULT NULL');
     $pntable['invitation_column_idx'] = array (
 										'uid'  		=> 'uid',
