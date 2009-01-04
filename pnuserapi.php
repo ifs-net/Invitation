@@ -120,6 +120,7 @@ function Invitation_userapi_getCode($args) {
 		else {
 		  	pnModLangLoad('Invitation','user');
 		  	$render = pnRender::getInstance('Invitation');
+		  	$render->cache_id = $returnuid;
 		  	$render->assign('inv_uname',	$uname);
 		  	$render->assign('inv_uid',		$returnuid);
 		  	$render->assign('inv_avatar',	pnUserGetVar('_YOURAVATAR',$returnuid));
