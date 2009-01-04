@@ -53,6 +53,9 @@ function Invitation_userapi_invite($args)
 		  	$c++;
 		}
 	}
+	// We will delete old invitation requests (older than 120 days) now..
+	$where = "date < '".date("Y-m-d H:i:s",(time()-60*60*24*120))."'";
+	DBUtil::deleteWhere('invitation',$where);
     return $c;
 }
 
@@ -63,6 +66,11 @@ function Invitation_userapi_invite($args)
  * @return	output
  */
 function Invitation_userapi_getCode($args) {
+    // Security check - show output only for users having the ACCESS_COMMENT permission
+    if (!SecurityUtil::checkPermission('invitation::', '::', ACCESS_COMMENT) || !pnUserLoggedIn()) {
+        return "";
+    }
+    // get user's id whoose invited information should be displayed
   	$uid = (int)$args['uid'];
   	if (!($uid > 1)) return "";
   	// first check: is there an entry in the cache?
