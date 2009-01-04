@@ -1,0 +1,27 @@
+<!--[ admincategorymenu xhtml=1 ]-->
+
+<br /><!--[insert name="getstatusmsg"]-->
+<br />
+<h1><!--[pnml name="_INVITATION_ADMINTITLE"]--></h1>
+
+<!--[pnml name="_INVITATION_ADMINEXPLANATION"]-->
+<br /><br />
+<!--[pnform]-->
+    <!--[pnformvalidationsummary]-->
+    
+    <!--[pnformlabel for="invitationtext" text="_INVITATION_INVITATIONTEXT"]-->:<br />
+    <!--[pnformtextinput id="invitationtext" textMode="multiline" rows="5" cols="50"]-->
+	<br /><br />
+	<!--[pnformbutton commandName="update" text="_INVITATION_STORE"]-->
+<!--[/pnform]-->
+<br /><br />
+<h1><!--[pnml name="_INVITATION_PREVIEW"]--></h1>
+<pre>
+<!--[include file="invitation_email_invite.htm"]-->
+</pre>
+<br /><br />
+<h1><!--[pnml name="_INVITATION_INTEGRATION"]--></h1>
+<!--[pnml name="_INVITATION_INTEGRATIONCALL"]-->: XXXXXXXX = USER-ID<br /><br />
+<code>
+&lt;!--[pnmodapifunc modname="Invitation" type="user" func="getCode" uid="XXXXXXXX"]--&gt;
+</code>
