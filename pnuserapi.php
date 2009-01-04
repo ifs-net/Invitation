@@ -45,7 +45,7 @@ function Invitation_userapi_invite($args)
 		  	// insert entry into database 
 		  	$obj = array (
 		  			'uid'	=> pnUserGetVar('uid'),
-		  			'email'	=> md5($email),
+		  			'email'	=> md5(strtolower($email)),
 		  			'date'	=> date("Y-m-d H:i:s")
 			  	);
 			DBUtil::insertObject($obj,'invitation');
