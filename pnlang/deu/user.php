@@ -2,7 +2,7 @@
 
 // main
 define('_INVITATION_INVITEUSER',			'Einen Bekannten hierher einladen');
-define('_INVITATION_INVITEUSEREXPLANATION',	'Noch keine Kontakte in dieser Community? Oder noch nicht alle hier, die Du gerne auch hier hättest? Dann lade diese in die Community ein. Jeder, der von Dir eingeladen wurde und sich dann auch in der Community anmeldet, wird dies auch in seinem Profil stehen haben. Ein kleines "Eingeladen von" mit Deinem Avatar wird ihm für immer bleiben ;-)');
+define('_INVITATION_INVITEUSEREXPLANATION',	'Noch keine Kontakte in dieser Community? Oder noch nicht alle hier, die Du gerne auch hier hättest? Dann lade diese in die Community ein. Jeder, der von Dir eingeladen wurde und sich dann auch in der Community anmeldet, wird dies - als kleines Dankeschön von uns - auch in seinem Profil stehen haben: Ein kleines "Eingeladen von" mit Deinem Avatar wird zeigen, wer ihn eingeladen hat.');
 define('_INVITATION_EMAIL',					'Emailadresse des Bekannten');
 define('_INVITATION_INVITATIONTEXT',		'Es können natürlich ein paar persönliche Zeilen der Einladung hinzugefügt werden');
 define('_INVITATION_INVITEFRIEND',			'Einladung verschicken');
