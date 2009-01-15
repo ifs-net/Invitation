@@ -125,7 +125,20 @@ function Invitation_latestblock_modify($blockinfo)
  */
 function Invitation_latestblock_update($blockinfo)
 {
-  	return Invitation_latestblock_display();
+    // Get current content
+    $vars = pnBlockVarsFromContent($blockinfo['content']);
+	
+    // alter the corresponding variable
+    $vars['numitems'] = FormUtil::getPassedValue('numitems');
+	
+    // write back the new contents
+    $blockinfo['content'] = pnBlockVarsToContent($vars);
+
+    // clear the block cache
+    $pnRender = pnRender::getInstance('Invitation');
+    $pnRender->clear_cache('invitation_block_latest.htm');
+	
+    return $blockinfo;
 }
 
 ?>

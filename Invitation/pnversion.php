@@ -11,7 +11,7 @@
 $modversion['name']           = 'Invitation';
 $modversion['displayname']    = 'Invitation';
 $modversion['description']    = 'Invitation module';
-$modversion['version'] = '1.0';
+$modversion['version'] = '1.1';
 $modversion['credits'] = 'pndocs/credits.txt';
 $modversion['help'] = 'pndocs/help.txt';
 $modversion['changelog'] = 'pndocs/changelog.txt';
