@@ -11,7 +11,7 @@
 $modversion['name']           = 'Invitation';
 $modversion['displayname']    = 'Invitation';
 $modversion['description']    = 'Invitation module';
-$modversion['version'] = '1.1';
+$modversion['version'] = '1.2';
 $modversion['credits'] = 'pndocs/credits.txt';
 $modversion['help'] = 'pndocs/help.txt';
 $modversion['changelog'] = 'pndocs/changelog.txt';
@@ -23,5 +23,8 @@ $modversion['contact'] = 'http://www.ifs-net.de';
 $modversion['dependencies'] = array(
 	array(	'modname'    => 'MyProfile',
 			'minversion' => '1.1', 'maxversion' => '',
+            'status'     => PNMODULE_DEPENDENCY_RECOMMENDED),
+	array(	'modname'    => 'ContactList',
+			'minversion' => '1.2', 'maxversion' => '',
             'status'     => PNMODULE_DEPENDENCY_RECOMMENDED)
             );
