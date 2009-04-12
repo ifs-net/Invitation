@@ -106,6 +106,13 @@ function Invitation_userapi_getCode($args) {
 	  			'iuid'	=> $returnuid
 		  	);
 	    DBUtil::insertObject($resultobj,'invitation_cache');
+	    // Automatically create ContactList link
+	    if (pnModAvailable('ContactList')) {
+	      	$isBuddy = pnModAPIFunc('ContactList','user','isBuddy',array('uid1' => $returnuid, 'uid2' => $uid));
+			if (!$isBuddy) {
+			  	pnModAPIFunc('ContactList','user','create',array('force' => 1, 'uid' => $returnuid, 'bid' => $uid));
+			}
+		}
 	}
   	else {
   	  	// Cache entry found
