@@ -4,26 +4,28 @@
 <!--[versioncheck module="Invitation"]-->
 <br /><!--[insert name="getstatusmsg"]-->
 <br />
-<h1><!--[pnml name="_INVITATION_ADMINTITLE"]--></h1>
+<h1><!--[gt text="Invitation Module Admin Backend"]--></h1>
 
-<!--[pnml name="_INVITATION_ADMINEXPLANATION"]-->
+<!--[gt text="The Invitation module is a small zikula module that allows your users to invite friends. They can send invitations to email addresses they know. Each email address can only be invited for one time - if another user invited the same person the last 2 months the person will not get a new invitation. The email addresses are stored as md5 hash and whenever a new user profile was created the user's email address will be compared with the stored hash and on success the information will be stored for the new user who invited him. You can specify some lines of text that will be added to every email that goes out as invitation."]-->
 <br /><br />
 <!--[pnform]-->
     <!--[pnformvalidationsummary]-->
     
-    <!--[pnformlabel for="invitationtext" text="_INVITATION_INVITATIONTEXT"]-->:<br />
+    <!--[pnformlabel for="invitationtext" __text="Text about the site that should be placed next to the user specified message inside an invitation email"]-->:<br />
     <!--[pnformtextinput id="invitationtext" textMode="multiline" rows="5" cols="50"]-->
 	<br /><br />
-	<!--[pnformbutton commandName="update" text="_INVITATION_STORE"]-->
+	<!--[pnformbutton commandName="update" __text="store"]-->
 <!--[/pnform]-->
 <br /><br />
-<h1><!--[pnml name="_INVITATION_PREVIEW"]--></h1>
+<h1><!--[gt text="Preview"]--></h1>
 <pre>
 <!--[include file="invitation_email_invite.htm"]-->
 </pre>
 <br /><br />
-<h1><!--[pnml name="_INVITATION_INTEGRATION"]--></h1>
-<!--[pnml name="_INVITATION_INTEGRATIONCALL"]-->: $uid = USER-ID<br /><br />
+<h1><!--[gt text="Integration into Zikula"]--></h1>
+<!--[gt text="For MyProfil users this integration does not have to be made - Invitation is already fully integrated. For other modules please write these lines into the profile module template that displays a profile and make sure that the uid parameter is the right one. This may depend on the module you use."]-->
+<br /><br />
+<!--[gt text="Integration code for display user profile template"]-->: $uid = USER-ID<br /><br />
 <code>
 &lt;!--[pnmodapifunc modname="Invitation" type="user" func="getCode" uid=$uid]--&gt;
 </code>

@@ -1,8 +1,8 @@
 <!--[foreach from=$items item=user]-->
-		&#187; <!--[$user.iuname|userprofilelink]--> <!--[pnml name="_INVITATION_HAS"]--> <!--[$user.uname|userprofilelink]--> <!--[pnml name="_INVITATION_INVITED"]--><br />
+		&#187; <!--[$user.iuname|userprofilelink]--> <!--[gt text="has invited"]--> <!--[$user.uname|userprofilelink]--><br />
 		<!--[$foreach.user.last]-->
 <!--[/foreach]-->
 
-<br /><!--[pnml name="_INVITATION_THANKYOUFORRECOMMENDING"]--><br />
+<br /><!--[gt text="Thank you for inviting your friends!"]--><br />
 
-<a href="<!--[pnmodurl modname="Invitation"]-->"><!--[pnml name="_INVITATION_INVITEYOURFRIENDS"]--></a>
+<a href="<!--[pnmodurl modname="Invitation"]-->"><!--[gt text="Invite friends now!"]--></a>

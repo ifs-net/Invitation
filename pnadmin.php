@@ -48,15 +48,17 @@ class invitation_admin_mainhandler
     }
     function handleCommand(&$render, &$args)
     {
+        // Language Domain
+        $dom = ZLanguage::getModuleDomain('Invitation');
 		if ($args['commandName']=='update') {
 		    if (!$render->pnFormIsValid()) return false;
 		    $obj = $render->pnFormGetValues();
 		    
 			if (pnModSetVar('Invitation','invitationtext',$obj['invitationtext'])) {
-			  	LogUtil::registerStatus(_INVITATION_PREFSUPDATED);
+			  	LogUtil::registerStatus(__('Settings updated!',$dom));
 			}
 			else {
-			  	LogUtil::registerError(_INVITATION_PREFSUPDATEFAILURE);
+			  	LogUtil::registerError(__('Settings could not be updated!'));
 			}
 			return pnRedirect(pnModURL('Invitation','admin'));
 		}
