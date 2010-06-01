@@ -3,13 +3,12 @@
 # This file is distributed under the same license as the PACKAGE package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 #
-#: pntemplates/invitation_user_main.htm:6
 #, fuzzy
 msgid ""
 msgstr ""
 "Project-Id-Version: Zikula component\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-01 12:07+0200\n"
+"POT-Creation-Date: 2010-06-01 12:20+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -53,6 +52,34 @@ msgstr ""
 
 #: pntemplates/invitation_user_main.htm:4
 msgid "Invite friends to sign up here"
+msgstr ""
+
+#: pntemplates/invitation_user_main.htm:6
+msgid ""
+"An email with link and information about this page will be added to your "
+"text."
+msgstr ""
+
+#: pntemplates/invitation_user_main.htm:12
+msgid "Your name"
+msgstr ""
+
+#: pntemplates/invitation_user_main.htm:14
+msgid "Your friend's email address"
+msgstr ""
+
+#: pntemplates/invitation_user_main.htm:17
+msgid "Send invitation to other friends, too:"
+msgstr ""
+
+#: pntemplates/invitation_user_main.htm:27
+msgid ""
+"You can add some personal text that will be sent to your friend - just write "
+"why the invited person(s) should register here, too."
+msgstr ""
+
+#: pntemplates/invitation_user_main.htm:30
+msgid "Send Invitations"
 msgstr ""
 
 #: pntemplates/invitation_block_latest.htm:2
