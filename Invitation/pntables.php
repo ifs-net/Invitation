@@ -32,6 +32,7 @@ function Invitation_pntables()
     $tables['invitation_column_idx'] = array (
 										'uid'  		=> 'uid',
 										'email'		=> 'email');
+
 	// Table for successful invitations
     $tables['invitation_cache_column'] = array(
     									'id'		=> 'id',
@@ -45,6 +46,7 @@ function Invitation_pntables()
     $tables['invitation_cache_column_idx'] = array (
 										'uid'  		=> 'uid',
 										'iuid'		=> 'iuid');
+
     // Return the table information
     return $tables;
 }
