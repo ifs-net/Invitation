@@ -1,9 +1,10 @@
 <!--[* $Id$ *]-->
 <!--[ admincategorymenu xhtml=1 ]-->
 
+<div class="z-admincontainer">
+
 <!--[versioncheck module="Invitation"]-->
-<br /><!--[insert name="getstatusmsg"]-->
-<br />
+<!--[insert name="getstatusmsg"]-->
 <h1><!--[gt text="Invitation Module Admin Backend"]--></h1>
 
 <!--[gt text="The Invitation module is a small zikula module that allows your users to invite friends. They can send invitations to email addresses they know. Each email address can only be invited for one time - if another user invited the same person the last 2 months the person will not get a new invitation. The email addresses are stored as md5 hash and whenever a new user profile was created the user's email address will be compared with the stored hash and on success the information will be stored for the new user who invited him. You can specify some lines of text that will be added to every email that goes out as invitation."]-->
@@ -29,3 +30,5 @@
 <code>
 &lt;!--[pnmodapifunc modname="Invitation" type="user" func="getCode" uid=$uid]--&gt;
 </code>
+
+</div>
