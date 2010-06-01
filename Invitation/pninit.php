@@ -38,9 +38,9 @@ function Invitation_upgrade($oldversion)
 {
   	// to be filled later... perhaps :-)
   	switch ($oldversion) {
-	    case '1.1':
 	    case '1.0':
-	    	return true;
+	    case '1.1':
+	    case '1.2':
 	    default:
 		    return false;
 	}
