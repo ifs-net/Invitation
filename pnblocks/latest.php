@@ -37,7 +37,7 @@ function Invitation_latestblock_display($blockinfo)
     if (!pnModAvailable('Invitation')) return false;
 
     // Security check
-    if (!SecurityUtil::checkPermission('Invitation:birthdayblock', "$blockinfo[title]::", ACCESS_READ)) return false;
+    if (!SecurityUtil::checkPermission('Invitation:latestblock', "$blockinfo[title]::", ACCESS_READ)) return false;
     
     // Get variables from content block
     $vars = pnBlockVarsFromContent($blockinfo['content']);
