@@ -4,7 +4,7 @@
  * @version      $Id$
  * @author       Florian Schieﬂl
  * @link         http://www.ifs-net.de
- * @copyright    Copyright (C) 2008
+ * @copyright    Copyright (C) 2010
  * @license      http://www.gnu.org/copyleft/gpl.html GNU General Public License
  */
 

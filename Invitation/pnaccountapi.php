@@ -1,7 +1,7 @@
 <?php
 /**
 * @package AboutMe?
-* @version $Id: pnaccountapi.php 4 2009-01-25 14:49:14Z quan $
+* @version $Id$
 * @author Florian Schießl
 * @link  http://www.ifs-net.de
 * @copyright Copyright (C) 2010
