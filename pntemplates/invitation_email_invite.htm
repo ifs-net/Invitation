@@ -1,17 +1,16 @@
 <!--[* $Id$ *]-->
 <!--[$invitationtext]-->
 
-<!--[pnml name="_INVITATION_SITEDETAILS"]-->
+<!--[gt text="More details about the website"]-->
 <!--[$sitename]-->: <!--[$baseurl]-->
-<!--[pnml name="_INVITATION_FRIENDSNAME"]-->: <!--[$name]-->
-<!--[pnml name="_INVITATION_FRIENDSUNAME"]-->: <!--[$uname]-->
+<!--[if $name ne '']-->
+    <!--[gt text="Your friend's name:"]--> <!--[$name]-->
+<!--[/if]-->
+<!--[gt text="Your friend's username:"]--> <!--[$uname]-->
 
-<!--[pnml name="_INVITATION_REGISTERACCOUNT"]-->: <!--[pnmodurl modname="Users" type="user" func="register" fqurl="true"]-->
+<!--[gt text="Account registration"]-->: <!--[pnmodurl modname="Users" type="user" func="register" fqurl="true"]-->
 
 <!--[if $text ne ""]-->
-<!--[pnml name="_INVITATION_PERSONALTEXT"]-->:
+    <!--[gt text="Your friend has added additional information for you:"]-->
 <!--[$text]-->
 <!--[/if]-->
-
-_____________________________________________________________________
-<!--[pnml name="_INVITATION_NOREPLY"]-->
