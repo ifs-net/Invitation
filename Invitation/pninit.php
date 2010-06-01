@@ -42,7 +42,7 @@ function Invitation_upgrade($oldversion)
 	    case '1.1':
 	    case '1.2':
 	    default:
-		    return false;
+		    return true;
 	}
 }
 

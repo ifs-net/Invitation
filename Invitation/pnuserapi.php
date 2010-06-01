@@ -31,7 +31,11 @@ function Invitation_userapi_invite($args)
     $render->assign('text',				$text);
     $render->assign('invitationtext',	pnModGetVar('Invitation','invitationtext'));
     $body = $render->fetch('invitation_email_invite.htm');
-    $subject = _INVITATION_INVITATIONFROM.': '.$name;
+
+    // Language Domain
+    $dom = ZLanguage::getModuleDomain('Invitation');
+
+    $subject = __('Invitation from user',$dom).': '.$name;
     $result = true;
 	// get some db information
    	$tables 	= pnDBGetTables();
@@ -46,7 +50,7 @@ function Invitation_userapi_invite($args)
       	$invited = DBUtil::selectObjectCount('invitation',$where);
       	$registered = DBUtil::selectObjectCount('users',$uwhere);
       	if (($invited > 0) || ($registered > 0)) {
-			LogUtil::registerStatus(_INVITATION_ALREADYREGISTERED.' '.$email);
+			LogUtil::registerStatus(__('Your invitation to the following email address was not sent because the user is already a registered user:').' '.$email);
 		}
 		else {
 		  	// send email

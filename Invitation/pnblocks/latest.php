@@ -58,22 +58,27 @@ function Invitation_latestblock_display($blockinfo)
     // Create output object
     $render =  pnRender::getInstance('Invitation');
 	
-    $render->caching = true;
-    $render->cache_lifetime = 3600; // cache for 1 hour
+//    $render->caching = true;
+//    $render->cache_lifetime = 3600; // cache for 1 hour
+
+    $render->caching = false;
 
 	$tables = pnDBGetTables();
 	$column = $tables['invitation_cache_column'];
-	$where = "tbl.".$column['iuid']." > 0";
+	$where = "tbl.".$column['iuid']." > 1";
 	$orderby = "tbl.".$column['id']." DESC";
+	Loader::includeOnce('pntables.php');
 
 	// Table join information to join userpictures table with users table to retrieve the usernames
 	// This join information is the second join information so we have to use the prefix a. in the following where parts
 	$joinInfo = array();
+	// join a
 	$joinInfo[] = array (	'join_table'          =>  'users',			// table for the join
 							'join_field'          =>  'uname',			// field in the join table that should be in the result with
                          	'object_field_name'   =>  'uname',			// ...this name for the new column
                          	'compare_field_table' =>  'uid',			// regular table column that should be equal to
                          	'compare_field_join'  =>  'uid');			// ...the table in join_table
+    // join b
 	$joinInfo[] = array (	'join_table'          =>  'users',			// table for the join
 							'join_field'          =>  'uname',			// field in the join table that should be in the result with
                          	'object_field_name'   =>  'iuname',			// ...this name for the new column
@@ -108,9 +113,6 @@ function Invitation_latestblock_modify($blockinfo)
     if (empty($vars['numitems'])) {
         $vars['numitems'] = 10;
     }
-
-	// Load language
-	pnModLangLoad('Invitation','latest');
 
     // Create output object
     $render = pnRender::getInstance('Invitation');

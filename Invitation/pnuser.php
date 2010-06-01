@@ -38,6 +38,8 @@ class invitation_user_mainhandler
     }
     function handleCommand(&$render, &$args)
     {
+        // Language Domain
+        $dom = ZLanguage::getModuleDomain('Invitation');
 		if ($args['commandName']=='invite') {
 		    if (!$render->pnFormIsValid()) return false;
 		    $obj = $render->pnFormGetValues();
@@ -57,9 +59,9 @@ class invitation_user_mainhandler
 					'name'			=> $obj['name']
 				));
 			if ($c >= 0) {
-			  	LogUtil::registerStatus($c." "._INVITATION_MAILSSENT);
+			  	LogUtil::registerStatus($c." ".__('Invitation emails sent!',$dom));
 			}
-			else LogUtil::registerError(_INVITATION_MAILERROR);
+			else LogUtil::registerError(__('Invitation mails could not be sent!'));
 			
 			// Return main page with not outfilled form
 			return pnRedirect(pnModURL('Invitation'));
