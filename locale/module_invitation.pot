@@ -1,0 +1,139 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#: pntemplates/invitation_user_main.htm:6
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Zikula component\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2010-06-01 12:07+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: pnuserapi.php:38
+msgid "Invitation from user"
+msgstr ""
+
+#: pnuserapi.php:53
+msgid ""
+"Your invitation to the following email address was not sent because the user "
+"is already a registered user:"
+msgstr ""
+
+#: pnversion.php:15
+msgid "Let your users invite others to your community!"
+msgstr ""
+
+#: pnaccountapi.php:32
+msgid "Invite friends"
+msgstr ""
+
+#: pnuser.php:62
+msgid "Invitation emails sent!"
+msgstr ""
+
+#: pnuser.php:64
+msgid "Invitation mails could not be sent!"
+msgstr ""
+
+#: pnadmin.php:58
+msgid "Settings updated!"
+msgstr ""
+
+#: pnadmin.php:61
+msgid "Settings could not be updated!"
+msgstr ""
+
+#: pntemplates/invitation_user_main.htm:4
+msgid "Invite friends to sign up here"
+msgstr ""
+
+#: pntemplates/invitation_block_latest.htm:2
+msgid "has invited"
+msgstr ""
+
+#: pntemplates/invitation_block_latest.htm:6
+msgid "Thank you for inviting your friends!"
+msgstr ""
+
+#: pntemplates/invitation_block_latest.htm:8
+msgid "Invite friends now!"
+msgstr ""
+
+#: pntemplates/invitation_admin_main.htm:7
+msgid "Invitation Module Admin Backend"
+msgstr ""
+
+#: pntemplates/invitation_admin_main.htm:9
+msgid ""
+"The Invitation module is a small zikula module that allows your users to "
+"invite friends. They can send invitations to email addresses they know. Each "
+"email address can only be invited for one time - if another user invited the "
+"same person the last 2 months the person will not get a new invitation. The "
+"email addresses are stored as md5 hash and whenever a new user profile was "
+"created the user's email address will be compared with the stored hash and "
+"on success the information will be stored for the new user who invited him. "
+"You can specify some lines of text that will be added to every email that "
+"goes out as invitation."
+msgstr ""
+
+#: pntemplates/invitation_admin_main.htm:14
+msgid ""
+"Text about the site that should be placed next to the user specified message "
+"inside an invitation email"
+msgstr ""
+
+#: pntemplates/invitation_admin_main.htm:17
+msgid "store"
+msgstr ""
+
+#: pntemplates/invitation_admin_main.htm:20
+msgid "Preview"
+msgstr ""
+
+#: pntemplates/invitation_admin_main.htm:25
+msgid "Integration into Zikula"
+msgstr ""
+
+#: pntemplates/invitation_admin_main.htm:26
+msgid ""
+"For MyProfile users this integration does not have to be made - Invitation "
+"is already fully integrated. For other modules please write these lines into "
+"the profile module template that displays a profile and make sure that the "
+"uid parameter is the right one. This may depend on the module you use."
+msgstr ""
+
+#: pntemplates/invitation_admin_main.htm:28
+msgid "Integration code for display user profile template"
+msgstr ""
+
+#: pntemplates/invitation_block_latest_modify.htm:3
+msgid "How many user should be shown in block?"
+msgstr ""
+
+#: pntemplates/invitation_email_invite.htm:4
+msgid "More details about the website"
+msgstr ""
+
+#: pntemplates/invitation_email_invite.htm:7
+msgid "Your friend's name:"
+msgstr ""
+
+#: pntemplates/invitation_email_invite.htm:9
+msgid "Your friend's username:"
+msgstr ""
+
+#: pntemplates/invitation_email_invite.htm:11
+msgid "Account registration"
+msgstr ""
+
+#: pntemplates/invitation_email_invite.htm:14
+msgid "Your friend has added additional information for you:"
+msgstr ""
