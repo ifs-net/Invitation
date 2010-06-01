@@ -58,11 +58,10 @@ function Invitation_latestblock_display($blockinfo)
     // Create output object
     $render =  pnRender::getInstance('Invitation');
 	
-//    $render->caching = true;
-//    $render->cache_lifetime = 3600; // cache for 1 hour
+    $render->caching = true;
+    $render->cache_lifetime = 3600; // cache for 1 hour
 
-    $render->caching = false;
-
+    pnModDBInfoLoad('Invitation');
 	$tables = pnDBGetTables();
 	$column = $tables['invitation_cache_column'];
 	$where = "tbl.".$column['iuid']." > 1";
