@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Zikula component\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2010-06-01 12:20+0200\n"
+"POT-Creation-Date: 2010-06-03 12:59+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -48,6 +48,10 @@ msgstr ""
 
 #: pnadmin.php:61
 msgid "Settings could not be updated!"
+msgstr ""
+
+#: pntemplates/invitation_user_plugin.htm:3
+msgid "This user was invited by"
 msgstr ""
 
 #: pntemplates/invitation_user_main.htm:4
@@ -94,11 +98,11 @@ msgstr ""
 msgid "Invite friends now!"
 msgstr ""
 
-#: pntemplates/invitation_admin_main.htm:7
+#: pntemplates/invitation_admin_main.htm:8
 msgid "Invitation Module Admin Backend"
 msgstr ""
 
-#: pntemplates/invitation_admin_main.htm:9
+#: pntemplates/invitation_admin_main.htm:10
 msgid ""
 "The Invitation module is a small zikula module that allows your users to "
 "invite friends. They can send invitations to email addresses they know. Each "
@@ -111,25 +115,25 @@ msgid ""
 "goes out as invitation."
 msgstr ""
 
-#: pntemplates/invitation_admin_main.htm:14
+#: pntemplates/invitation_admin_main.htm:15
 msgid ""
 "Text about the site that should be placed next to the user specified message "
 "inside an invitation email"
 msgstr ""
 
-#: pntemplates/invitation_admin_main.htm:17
+#: pntemplates/invitation_admin_main.htm:18
 msgid "store"
 msgstr ""
 
-#: pntemplates/invitation_admin_main.htm:20
+#: pntemplates/invitation_admin_main.htm:21
 msgid "Preview"
 msgstr ""
 
-#: pntemplates/invitation_admin_main.htm:25
+#: pntemplates/invitation_admin_main.htm:26
 msgid "Integration into Zikula"
 msgstr ""
 
-#: pntemplates/invitation_admin_main.htm:26
+#: pntemplates/invitation_admin_main.htm:27
 msgid ""
 "For MyProfile users this integration does not have to be made - Invitation "
 "is already fully integrated. For other modules please write these lines into "
@@ -137,7 +141,7 @@ msgid ""
 "uid parameter is the right one. This may depend on the module you use."
 msgstr ""
 
-#: pntemplates/invitation_admin_main.htm:28
+#: pntemplates/invitation_admin_main.htm:29
 msgid "Integration code for display user profile template"
 msgstr ""
 
