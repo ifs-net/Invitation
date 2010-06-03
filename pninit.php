@@ -41,6 +41,7 @@ function Invitation_upgrade($oldversion)
 	    case '1.0':
 	    case '1.1':
 	    case '1.2':
+	    case '2.0':
 	    default:
 		    return true;
 	}
