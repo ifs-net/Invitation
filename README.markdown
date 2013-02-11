@@ -1,11 +1,11 @@
 Invitation
 ==========
 
-== About the module
+## About the module
 
 Invitation is a zikula module that allows your users to invite their friends via email.
 
-== Features:
+## Features:
 
 * Allows your users to invite their friends to your website
 * Configure html and plain text that describes your website, This text is sent with each invitation email
