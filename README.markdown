@@ -3,7 +3,7 @@ Invitation
 
 ## About the module
 
-Invitation is a zikula module that allows your users to invite their friends via email.
+Invitation is a zikula module that allows your users to invite their friends via email to your website.
 
 ## Features:
 
