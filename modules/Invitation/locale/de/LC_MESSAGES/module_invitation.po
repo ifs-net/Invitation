@@ -1,0 +1,272 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Invitation\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2013-02-11 01:16-0500\n"
+"PO-Revision-Date: 2013-02-11 15:32+0100\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+
+#: lib/Invitation/Api/Account.php:30
+msgid "Invite friends"
+msgstr "Freunde einladen"
+
+#: lib/Invitation/Api/User.php:43
+msgid "Invitation from user"
+msgstr "Einladung vom Benutzer"
+
+#: lib/Invitation/Api/User.php:59
+msgid ""
+"Your invitation to the following email address was not sent because the user "
+"is already a registered user or another invitation has already be sent by "
+"another user:"
+msgstr ""
+"Die Einladung an die folgende Emailadresse konnte nicht verschickt werden, "
+"da dieser bereits zuvor von Dir oder einem anderen Benutzer dieser Seite "
+"eingeladen wurde oder weil der Benutzer bereits einen Account auf dieser "
+"Webseite hat:"
+
+#: lib/Invitation/Api/User.php:64
+#, php-format
+msgid "%s sent an invitation for you"
+msgstr "%s hat Dir eine Einladung geschickt"
+
+#: lib/Invitation/Api/User.php:70
+msgid "Error! Unable to send e-mail message."
+msgstr "Fehler - Nachricht konnte nicht verschickt werden."
+
+#. ! module name that appears in URL
+#: lib/Invitation/Version.php:17 lib/Invitation/Version.php:20
+msgid "Invitation"
+msgstr "Einladungen"
+
+#: lib/Invitation/Version.php:18
+msgid "Let your users invite others to your community"
+msgstr ""
+"Dieses Modul erlaubt es den Benutzern einer Webseite, Freunde per Email zu "
+"dieser einzuladen"
+
+#: lib/Invitation/Block/Latest.php:33
+msgid "Invitations"
+msgstr "Einladungen"
+
+#: lib/Invitation/Block/Latest.php:34
+msgid "See who was invited recently and registered at this website"
+msgstr ""
+"Sehe, wer zuletzt eingeladen wurde und sich daraufhin auf dieser Webseite "
+"registriert hat"
+
+#: lib/Invitation/Form/Handler/Admin/Main.php:22
+msgid "This is a default text for the preview function"
+msgstr ""
+"Dieses ist ein Platzhalter-Text damit in der Vorschaufunktion auch etwas "
+"angezeigt wird"
+
+#: lib/Invitation/Form/Handler/Admin/Main.php:41
+msgid "Settings updated!"
+msgstr "Einstellungen aktualisiert!"
+
+#: lib/Invitation/Form/Handler/Admin/Main.php:43
+msgid "Settings could not be updated!"
+msgstr "Die Einstellungen konnten nicht aktualisiert werden!"
+
+#: lib/Invitation/Form/Handler/Admin/Main.php:47
+#: lib/Invitation/Form/Handler/User/Main.php:27
+msgid "Action aborted"
+msgstr "Aktion wurde abgebrochen"
+
+#: lib/Invitation/Form/Handler/User/Main.php:51
+msgid "Invitation emails sent!"
+msgstr "Einladungs-Emails wurden verschickt!"
+
+#: lib/Invitation/Form/Handler/User/Main.php:53
+msgid "Invitation mails could not be sent!"
+msgstr "Einladungs-Emails konnten nicht verschickt werden!"
+
+#: templates/admin/main.htm:6
+msgid "Settings"
+msgstr "Einstellungen"
+
+#: templates/admin/main.htm:7
+msgid "Invitation Configuration Page"
+msgstr "Konfuguration des Moduls \"Invitation\""
+
+#: templates/admin/main.htm:14
+msgid "Invitation Configuration"
+msgstr "Konfiguration für Einladungen"
+
+#: templates/admin/main.htm:19
+msgid ""
+"The Invitation module allows your users to invite friends to your website. "
+"Entered email addresses are stored as md5 hash (decoded) to avoid spaming. "
+"If you use ContactList the invited user will become buddy of the inviting "
+"user automatically after a successfull registration."
+msgstr ""
+"Das Modul \"Invitation\" erlaubt es Benutzern einer Webseite, dass diese per "
+"Email ihre Freunde einladen können. Eingegebene Emailadressen werden für 120 "
+"Tage gespeichert, aus Datenschutzgründen nur als md5-hash. Dies genügt "
+"jedoch, dass gezieltes Spamming einzelner Adressen nicht möglich ist, da "
+"eine Einladung in dem Zeitraum nur einmal verschickt werden kann. Zusätzlich "
+"ist Invitation mit ContactList gekoppelt, sofern dieses installiert ist, so "
+"dass Eingeladene, die sich registrieren, automatisch ein bestätigter Kontakt "
+"der einladenden Person werden. Zuletzt ist es möglich, im Profil eines "
+"Benutzers anzeigen zu lassen, wer diese eingeladen und angeworben hat."
+
+#: templates/admin/main.htm:23
+msgid "Main configuration"
+msgstr "Mögliche Einstellungen"
+
+#: templates/admin/main.htm:26
+msgid ""
+"You can enter some text about your website in plain text and html format "
+"that will always included into the invitation emails"
+msgstr ""
+"Hier kann ein beliebiger Text über diese Website eingegeben werden, welcher "
+"zusammen mit den Einladungs-Emails verschickt wird - einmal mit Html-"
+"Formatierungen für html-Mails, einmal als plain text für Plain-Text-Mails"
+
+#: templates/admin/main.htm:29
+msgid "Text for plain text emails"
+msgstr "Text für Plain-Text-Mails"
+
+#: templates/admin/main.htm:33
+msgid "Text for html formated emails"
+msgstr "Text für mit Html formatierte Mails"
+
+#: templates/admin/main.htm:40
+msgid "Save"
+msgstr "Speichern"
+
+#: templates/admin/main.htm:41 templates/user/main.htm:71
+msgid "Cancel"
+msgstr "Abbrechen"
+
+#: templates/admin/main.htm:45 templates/admin/main.htm:48
+msgid "Preview"
+msgstr "Vorschau"
+
+#: templates/admin/main.htm:52
+msgid "Integration into Zikula"
+msgstr "Integration in das Zikula-Gesamtsystem"
+
+#: templates/admin/main.htm:53
+msgid ""
+"Invitation can be integrated in user profile pages. An information who had "
+"once invited the user successfully can be placed there. MyProfile users do "
+"not have to do anything, the integration is done automatialy. For other "
+"modules please write these line into the profile module template that "
+"displays a profile and make sure that the uid parameter is the right one. "
+"This may depend on the module you use."
+msgstr ""
+"Das Modul kann in die Profilanzeige integriert werden und zeigt dort dann "
+"an, wer den Benutzer eingeladen und angeworben hat. MyProfile integriert "
+"diese Funktion automatisch, beim Profilmodul \"Profile\" muss dies manuell "
+"durch das Einfügen des folgenden Smarty-Befehls in das Profil-Template (Typ: "
+"user, Funktion: view) geschehen."
+
+#: templates/admin/main.htm:55
+msgid "Integration code for the module \"Profile\""
+msgstr "Integrationscode für das Modul \"Profile\""
+
+#: templates/user/email_invite_html.htm:7
+#: templates/user/email_invite_plain.htm:3
+msgid "More details about the website"
+msgstr "Mehr über die Webseite"
+
+#: templates/user/email_invite_html.htm:11
+msgid "Sitename"
+msgstr "Name der Webseite"
+
+#: templates/user/email_invite_html.htm:15
+msgid "Your friend's name"
+msgstr "Name des einladenden Freundes"
+
+#: templates/user/email_invite_html.htm:19
+msgid "Your friend's username"
+msgstr "Benutzername des einladenden Freundes"
+
+#: templates/user/email_invite_html.htm:22
+#: templates/user/email_invite_plain.htm:9
+msgid "Account registration"
+msgstr "Registrierung eines Accounts"
+
+#: templates/user/email_invite_html.htm:28
+#: templates/user/email_invite_plain.htm:11
+msgid "Your friend has added additional information for you:"
+msgstr "Der einladende Benutzer hat noch einen persönlichen Text hinzugefügt:"
+
+#: templates/user/plugin.htm:2
+msgid "This user was invited by"
+msgstr "Der Benutzer wurde eingeladen von"
+
+#: templates/user/main.htm:5
+#, php-format
+msgid "Inite your friends to '%1$s'"
+msgstr "Lade Deine Freunde zu '%1$s' ein"
+
+#: templates/user/main.htm:15
+msgid "Your name"
+msgstr "Eigener Name"
+
+#: templates/user/main.htm:20
+msgid "Your friend's email address"
+msgstr "Email-Adresse des Freundes, der eingeladen werden soll"
+
+#: templates/user/main.htm:25
+msgid ""
+"You want to send more than just one invitation? Click here to expand the "
+"form!"
+msgstr ""
+"Sollen mehrere Leute gleichzeitig eingeladen werden? Dann bitte hierher "
+"klicken und weitere Formularfelder für Emailadressen können befüllt werden!"
+
+#: templates/user/main.htm:31 templates/user/main.htm:35
+#: templates/user/main.htm:39 templates/user/main.htm:43
+#: templates/user/main.htm:47 templates/user/main.htm:51
+#: templates/user/main.htm:55
+msgid "Additional recipient"
+msgstr "Weiterer Email-Empfänger"
+
+#: templates/user/main.htm:63
+msgid "Add a message to your email"
+msgstr ""
+"Der Einladung kann (und sollte) eine persönliche Grußbotschaft hinzugefügt "
+"werden"
+
+#: templates/user/main.htm:70
+msgid "Send invitation"
+msgstr "Einladung verschicken"
+
+#: templates/user/email_invite_plain.htm:6
+msgid "Your friend's name:"
+msgstr "Name des einladenden Freundes:"
+
+#: templates/user/email_invite_plain.htm:8
+msgid "Your friend's username:"
+msgstr "Benutzername des einladenden Freundes:"
+
+#: templates/block/latest_modify.htm:2
+msgid "Number of recently-invited users to display"
+msgstr ""
+"Anzahl der kürzlich eingeladenen und hier registrierten, anzuzeigenden "
+"Benutzer"
+
+#: templates/block/latest.htm:2
+msgid "has invited"
+msgstr "hat eingeladen"
+
+#: templates/block/latest.htm:6
+msgid "Thank you for inviting your friends!"
+msgstr "Danke für das Verschicken von Einladungen!"
+
+#: templates/block/latest.htm:8
+msgid "Invite friends now!"
+msgstr "Jetzt Freunde einladen!"
