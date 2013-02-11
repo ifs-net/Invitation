@@ -1,0 +1,86 @@
+{ajaxheader prototype=true scriptaculous=true effects=true}
+
+<div class="z-frontendcontainer">
+
+    <h2>{gt text='Inite your friends to \'%1$s\'' tag1=$sitename}</h2>
+
+    {form cssClass='z-form'}
+    {* add validation summary and a <div> element for styling the form *}
+    {*formsetinitialfocus inputId='title'*}
+
+    {formvalidationsummary}
+    {insert name="getstatusmsg"}
+
+    <div class="z-formrow">
+        {formlabel mandatorysym="1" for="name" __text="Your name"}
+        {formtextinput id="name" maxLength="25" mandatory="1"}<br />
+    </div>
+
+    <div class="z-formrow">
+        {formlabel for="email" __text="Your friend's email address" mandatorysym="1"}
+        {formemailinput  id="email" mandatory="1"}<br />
+    </div>
+
+    <div class="z-formrow" id="addClick" class="z-hide inv_link">
+        {gt text="You want to send more than just one invitation? Click here to expand the form!"}
+        <img class="inv_link" src="images/icons/extrasmall/add_user.png" />
+    </div>
+    <div id="invMails">
+
+        <div class="z-formrow">
+            {formlabel for="email2" __text="Additional recipient"}
+            {formemailinput id="email2" maxLength="255" mandatory="0"}<br />
+        </div>
+        <div class="z-formrow">
+            {formlabel for="email3" __text="Additional recipient"}
+            {formemailinput id="email3" maxLength="255" mandatory="0"}<br />
+        </div>
+        <div class="z-formrow">
+            {formlabel for="email4" __text="Additional recipient"}
+            {formemailinput id="email4" maxLength="255" mandatory="0"}<br />
+        </div>
+        <div class="z-formrow">
+            {formlabel for="email5" __text="Additional recipient"}
+            {formemailinput id="email5" maxLength="255" mandatory="0"}<br />
+        </div>
+        <div class="z-formrow">
+            {formlabel for="email6" __text="Additional recipient"}
+            {formemailinput id="email6" maxLength="255" mandatory="0"}<br />
+        </div>
+        <div class="z-formrow">
+            {formlabel for="email7" __text="Additional recipient"}
+            {formemailinput id="email7" maxLength="255" mandatory="0"}<br />
+        </div>
+        <div class="z-formrow">
+            {formlabel for="email8" __text="Additional recipient"}
+            {formemailinput id="email8" maxLength="255" mandatory="0"}<br />
+        </div>
+
+    </div>
+
+    <div class="z-formrow">
+
+        {formlabel for="text" __text="Add a message to your email"}
+        {formtextinput id="text" textMode="multiline" rows="5" cols="50"}
+    
+    </div>
+    
+    {* include possible submit actions *}
+    <div class="z-buttons z-formbuttons">
+        {formbutton id='btnUpdate' commandName='invite' __text='Send invitation' class='z-bt-ok'}
+        {formbutton id='btnCancel' commandName='cancel' __text='Cancel' class='z-bt-cancel'}
+    </div>
+    
+  {/form}
+
+</div>
+
+<script type="text/javascript">
+    $('addClick').removeClassName('z-hide');
+    $('invMails').hide();
+
+    $('addClick').observe('click',function() {
+        $('invMails').appear();
+        $('addClick').hide();
+    });
+</script>

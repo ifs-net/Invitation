@@ -1,0 +1,31 @@
+{modurl modname="Users" type="user" func="register" fqurl="true" assign="urlRegistration"}
+<p>
+    {$invitationtext_html}
+</p>
+
+<p>
+    <strong>{gt text="More details about the website"}</strong>
+</p>
+<ul>
+    <li>
+        {gt text="Sitename"}: <a href="{$baseurl}">{$sitename}</a>
+    </li>
+    {if $name ne ''}
+    <li>
+        {gt text="Your friend's name"}: {$name}
+    </li>
+    {/if}
+    <li>
+        {gt text="Your friend's username"}: {$uname}
+    </li>
+    <li>
+        {gt text="Account registration"}: <a href="{$urlRegistration}">{$urlRegistration}</a>
+    </li>
+</ul>
+
+{if $text ne ""}
+<p>
+{gt text="Your friend has added additional information for you:"}<br />
+<i>{$text|safetext}</i>
+</p>
+{/if}

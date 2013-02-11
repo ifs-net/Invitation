@@ -1,0 +1,60 @@
+{if !isset($smarty.get.theme) || $smarty.get.theme ne 'Printer'}
+{adminheader}
+{/if}
+
+<div class="z-admin-content-pagetitle">
+    {icon type='config' size='small' __alt='Settings'}
+    <h3>{gt text="Invitation Configuration Page"}</h3>
+</div>
+
+
+{form cssClass='z-form'}
+
+<div id="cl_main" class="z-admincontainer">
+  <h3>{gt text="Invitation Configuration"}</h3>
+
+  {formvalidationsummary}
+
+  <div class="z-informationmsg">
+    {gt text="The Invitation module allows your users to invite friends to your website. Entered email addresses are stored as md5 hash (decoded) to avoid spaming. If you use ContactList the invited user will become buddy of the inviting user automatically after a successfull registration."}
+  </div>
+
+  <fieldset>
+    <legend>{gt text="Main configuration"}</legend>
+
+    <div class="z-formrow">
+        {gt text="You can enter some text about your website in plain text and html format that will always included into the invitation emails"}
+    </div>
+    <div class="z-formrow">
+        {formlabel for="invitationtext_plain" __text="Text for plain text emails"}
+        {formtextinput id="invitationtext_plain" textMode="multiline" rows="5" cols="50"}
+    </div>
+    <div class="z-formrow">
+        {formlabel for="invitationtext_html" __text="Text for html formated emails"}
+        {formtextinput id="invitationtext_html" textMode="multiline" rows="5" cols="50"}
+    </div>
+    
+  </fieldset>
+  
+  <div class="z-buttons z-formbuttons">
+    {formbutton commandName="update" __text="Save" class='z-bt-save'}
+    {formbutton commandName="cancel" __text="Cancel" class='z-bt-cancel'}
+  </div>
+  {/form}
+
+<h3>{gt text="Preview"} (html)</h3>
+{include file="user/email_invite_html.htm"}
+
+<h3>{gt text="Preview"} (plain text)</h3>
+<pre>
+{include file="user/email_invite_plain.htm"}
+</pre>
+<h3>{gt text="Integration into Zikula"}</h3>
+{gt text="Invitation can be integrated in user profile pages. An information who had once invited the user successfully can be placed there. MyProfile users do not have to do anything, the integration is done automatialy. For other modules please write these line into the profile module template that displays a profile and make sure that the uid parameter is the right one. This may depend on the module you use."}
+<br /><br />
+{gt text='Integration code for the module "Profile"'}:<br /><br />
+<code>
+&#123;modapifunc modname="Invitation" type="user" func="getCode" uid=$userinfo.uid&#125;
+</code>
+
+</div>

@@ -1,0 +1,13 @@
+{$invitationtext_plain}
+
+{gt text="More details about the website"}
+{$sitename}: {$baseurl}
+{if $name ne ''}
+{gt text="Your friend's name:"} {$name}
+{/if}
+{gt text="Your friend's username:"} {$uname}
+{gt text="Account registration"}: {modurl modname="Users" type="user" func="register" fqurl="true"}
+
+{if $text ne ""}{gt text="Your friend has added additional information for you:"}
+{$text|safetext}
+{/if}
